@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Cumpleaños</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Cartel de aviso si el celular está en vertical -->
+    <div id="bloqueo-orientacion" class="bloqueo-vertical">
+        <div class="bloqueo-contenido">
+            <span class="bloqueo-icono">↻</span>
+            <p>Gire el dispositivo para apreciar esta invitación.</p>
+        </div>
+    </div>
+
+    <!-- 2. Pantalla de carga (Loader) -->
+    <div id="pantalla-carga" class="loader">
+        <div class="loader-contenido">
+            <h2>Preparando su invitación...</h2>
+            <div class="barra-progreso-fondo">
+                <div id="barra-progreso" class="barra-progreso-linea"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Contenedor principal de la invitación -->
+    <main id="contenedor-invitacion" class="contenedor-principal">
+        
+        <!-- Pantalla 1: Portada (Volvemos a una sola capa limpia) -->
+        <section id="pantalla-portada" class="pantalla-slide">
+            <div class="indicador-deslizar">▼</div>
+        </section>
+
+        <!-- Pantalla 2: Info de la Cita (Gemini_Generated_Image_mt593bmt593bmt59.png) -->
+        <section id="pantalla-interior" class="pantalla-slide">
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
