@@ -96,7 +96,7 @@ body, html {
     height: 100%;
     position: relative;
     perspective: 1200px;
-    background-color: #000000;
+    background-color: transparent;
     overflow: hidden;
 }
 
@@ -109,7 +109,7 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: #000000;
+    background-color: transparent;
     /* Suavizamos la transición a 2 segundos */
     transition: transform 2s cubic-bezier(0.4, 0, 0.2, 1), clip-path 2s cubic-bezier(0.4, 0, 0.2, 1), opacity 2s ease;
 }
@@ -119,6 +119,7 @@ body, html {
 }
 
 #pantalla-portada {
+    background-color: transparent;
     z-index: 2;
     transform-origin: left top; /* Pivote arriba a la izquierda */
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
